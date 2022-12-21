@@ -5,6 +5,8 @@
 class Tank : public GameObject
 {
     int hModel_;    //モデル番号
+    int camType_;
+
 public:
     //コンストラクタ
     Tank(GameObject* parent);
