@@ -4,6 +4,7 @@
 #include "Engine/Debug.h"
 #include "Engine/Camera.h"
 #include "Ground.h"
+#include "TankHead.h"
 
 enum
 {
@@ -32,6 +33,8 @@ void Tank::Initialize()
     //モデルデータのロード
     hModel_ = Model::Load("TankBody.fbx");
     assert(hModel_ >= 0);
+
+    Instantiate<TankHead>(this);
 }
 
 //更新
