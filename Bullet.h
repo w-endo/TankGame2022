@@ -1,17 +1,20 @@
 #pragma once
 #include "Engine/GameObject.h"
+#include "Engine/SphereCollider.h"
 
-
-//◆◆◆を管理するクラス
-class TankHead : public GameObject
+//プレイヤーを管理するクラス
+class Bullet : public GameObject
 {
     int hModel_;    //モデル番号
+    XMFLOAT3 move_; 
+
+
 public:
     //コンストラクタ
-    TankHead(GameObject* parent);
+    Bullet(GameObject* parent);
 
     //デストラクタ
-    ~TankHead();
+    ~Bullet();
 
     //初期化
     void Initialize() override;
@@ -25,5 +28,5 @@ public:
     //開放
     void Release() override;
 
-    int GetModelHandle() { return hModel_; }
+    void SetMove(XMFLOAT3 move) { move_ = move; }
 };

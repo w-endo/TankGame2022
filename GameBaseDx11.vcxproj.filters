@@ -94,6 +94,7 @@
     <ClCompile Include="Tank.cpp" />
     <ClCompile Include="Ground.cpp" />
     <ClCompile Include="TankHead.cpp" />
+    <ClCompile Include="Bullet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -164,6 +165,7 @@
     <ClInclude Include="Tank.h" />
     <ClInclude Include="Ground.h" />
     <ClInclude Include="TankHead.h" />
+    <ClInclude Include="Bullet.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">
