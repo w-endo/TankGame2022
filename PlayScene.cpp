@@ -1,6 +1,7 @@
 #include "PlayScene.h"
 #include "Tank.h"
 #include "Ground.h"
+#include "Enemy.h"
 
 //コンストラクタ
 PlayScene::PlayScene(GameObject* parent)
@@ -13,6 +14,7 @@ void PlayScene::Initialize()
 {
 	Instantiate<Tank>(this);
 	Instantiate<Ground>(this);
+	Instantiate<Enemy>(this);
 }
 
 //更新

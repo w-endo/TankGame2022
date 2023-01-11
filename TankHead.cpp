@@ -42,7 +42,7 @@ void TankHead::Update()
         XMVECTOR vRoot = XMLoadFloat3(&cannonRoot);
         XMVECTOR vMove = vTop - vRoot;
         vMove = XMVector3Normalize(vMove);
-        vMove *= 0.1f;
+        vMove *= 0.5f;
         XMFLOAT3 move;
         XMStoreFloat3(&move, vMove);
 
